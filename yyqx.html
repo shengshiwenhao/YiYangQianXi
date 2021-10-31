@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>易烊千玺XX(UP)</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+	}
+	h1{
+		width: 25%;
+		height: 100%;
+		font-size: 32px;
+		float: left;
+		border: 10px #999 solid;
+		box-sizing: border-box;
+		background: url(img/yyqx/yyqxh1.jpg);
+		background-size: 130% 100%;	
+		overflow: hidden;
+	}
+	h1 span{
+		display: inline-block;
+		margin: 20px 0;
+	}
+	h1 button{
+		height: 50px;
+		background: rgba(10,30,200,0.1);;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	h1 .start{
+		width: 100%;	
+	}
+	h1 .suspend,h1 .proceed{
+		float: left;
+		width: 50%;
+	}
+	h1 nav{
+		font-weight: 700;
+		font-size: 28px;
+		margin-top: 10px;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	article{
+		width: 75%;
+		height: 100%;
+		border: 10px #999 solid;
+		box-sizing: border-box;
+		float: right;
+		overflow: hidden;
+		position: relative;
+	}
+	article div{
+		float: left;
+		width: 16.666%;
+		height: 100%;
+		overflow: hidden;
+		cursor: pointer; 
+	}
+	article p{	
+		width: 100%;
+		height: 25%;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		background: rgba(180,233,244,0.7);
+	}
+	article img{
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	/*游戏结束盒子*/
+	#gameover { 
+	   position: absolute; 
+	   left: 40%;  
+	   top: 30%; 
+	   width: 25%; 
+	   height: 30%; 
+	   box-sizing: border-box;
+	   box-shadow: 0 0 4px #222222; 
+	   background-color: #e1e1e1;
+	   background:url(img/yyqx/yyqxfo.jpg) no-repeat;
+	   background-size: 100% 100%;
+	   text-align: center;  
+	   display: none; 
+	}
+	#gameover u { 
+	   display: block;
+	   width: 100%; 
+	   height: 20%; 
+	   text-align: center; 
+	   font-size: 24px; 
+	   color: #000000; 
+	   font-weight: 700;
+	   text-decoration: none;
+	}
+	#gameover .qd{ 
+	   width: 60%; 
+	   height: 20%; 
+	   text-align: center; 
+	   font-size: 20px; 
+	   background: #336688; 
+	   color: #ffffff; 
+	   border-radius: 30%;
+	   margin-left: 20%;
+	}
+	#gameover .nl{ 
+	   text-align: center; 
+	   font-size: 20px; 
+	   color: #ffffff;  
+	}
+	</style>
+</head>
+<body>
+	<h1>
+		<button class="start">开始</button>
+		<button class="suspend">暂停</button>
+		<button class="proceed">继续</button>
+		<br/>
+		易烊千玺<small>(面向对象版)</small><br/>
+		<br/>
+		<span>分数：</span>
+		<b></b>
+		<br/>
+		<span>时间：</span>
+		<strong></strong>
+		<br/>
+		<span>最高分：</span>
+		<big></big>
+		<br/>
+	</h1>
+	<article>
+		<div>
+			<p><img class = "yyqx00" src="img/yyqx/yyqx00.jpg"></p>
+			<p><img class = "yyqx01" src="img/yyqx/yyqx01.jpg"></p>
+			<p><img class = "yyqx02" src="img/yyqx/yyqx02.jpg"></p>
+			<p><img class = "yyqx03" src="img/yyqx/yyqx03.jpg"></p>
+		</div>
+		<div>
+			<p><img class = "yyqx04" src="img/yyqx/yyqx04.jpg"></p>
+			<p><img class = "yyqx05" src="img/yyqx/yyqx05.jpg"></p>
+			<p><img class = "yyqx06" src="img/yyqx/yyqx06.jpg"></p>
+			<p><img class = "yyqx07" src="img/yyqx/yyqx07.jpg"></p>
+		</div>
+		<div>
+			<p><img class = "yyqx08" src="img/yyqx/yyqx08.jpg"></p>
+			<p><img class = "yyqx09" src="img/yyqx/yyqx09.jpg"></p>
+			<p><img class = "yyqx10" src="img/yyqx/yyqx10.jpg"></p>
+			<p><img class = "yyqx11" src="img/yyqx/yyqx11.jpg"></p>
+		</div>
+		<div>
+			<p><img class = "yyqx00" src="img/yyqx/yyqx00.jpg"></p>
+			<p><img class = "yyqx01" src="img/yyqx/yyqx01.jpg"></p>
+			<p><img class = "yyqx02" src="img/yyqx/yyqx02.jpg"></p>
+			<p><img class = "yyqx03" src="img/yyqx/yyqx03.jpg"></p>
+		</div>
+		<div>
+			<p><img class = "yyqx04" src="img/yyqx/yyqx04.jpg"></p>
+			<p><img class = "yyqx05" src="img/yyqx/yyqx05.jpg"></p>
+			<p><img class = "yyqx06" src="img/yyqx/yyqx06.jpg"></p>
+			<p><img class = "yyqx07" src="img/yyqx/yyqx07.jpg"></p>
+		</div>
+		<div>
+			<p><img class = "yyqx08" src="img/yyqx/yyqx08.jpg"></p>
+			<p><img class = "yyqx09" src="img/yyqx/yyqx09.jpg"></p>
+			<p><img class = "yyqx10" src="img/yyqx/yyqx10.jpg"></p>
+			<p><img class = "yyqx11" src="img/yyqx/yyqx11.jpg"></p>
+		</div>
+		<!-- 游戏结束盒子 -->
+		<footer id="gameover">
+			<u>Gamer Over</u>
+			<u>您最后的分数是</u>
+			<u></u>
+    		<u class="qd">确定</u>
+    		<u class="nl">不要灰心，继续努力！</u>
+		</footer>
+	</article>
+</body>
+</html>
+<script type="text/javascript">
+var scoreBox = document.querySelector("h1 b");
+var timeBox =  document.querySelector("h1 strong");
+var bigScore = document.querySelector("h1 big");
+var start =  document.querySelector("h1 .start");
+var suspend =  document.querySelector("h1 .suspend");
+var proceed =  document.querySelector("h1 .proceed");
+var article = document.querySelector("article");
+var divs = document.querySelectorAll("article div");
+var ps = document.querySelectorAll("article p");
+var pictures = document.querySelectorAll("article img");
+var gameover = document.querySelector("#gameover");
+(function(bg){
+	bigScore.innerHTML = localStorage.getItem("最高分"+bg);
+})("yyqx")
+function XxPlay(scoreBox,timeBox,bigScore,article,divs,ps,pictures,suspend,proceed,gameover){
+	this.scoreBox = scoreBox;
+	this.timeBox =  timeBox;
+	this.bigScore = bigScore;
+	this.article = article;
+	this.divs = divs;
+	this.ps = ps;
+	this.pictures = pictures;
+	this.suspend = suspend;
+	this.proceed =proceed;
+	this.gameover = gameover;
+	this.pause = false;
+	this.countdown = null;
+	this.score = 0;
+	this.hits = 0;
+	this.pictureArr = new Array();		  
+	this.init();
+}
+XxPlay.prototype = {
+	constructor:XxPlay,
+	init:function(){
+		var that = this;
+		this.rules(5,1,30,60,"yyqx");
+		this.disOrder(6,4,"yyqx");
+		this.background("yyqx","100% 100%");
+		this.PCbtn();
+		setTimeout(function(){
+			that.countDown(180);
+		},2000);
+	},
+	rules:function(step,th,spacing,totalPoints,bg){
+		var that = this;
+		for (var i = 0; i < this.ps.length; i++) {
+			this.ps[i].idx = i;
+			this.ps[i].onclick = function(){
+				that.hits++;
+				if(that.hits==3){ 
+					if(that.pictures[that.pictureArr[0]].className != that.pictures[that.pictureArr[1]].className){
+						that.pictures[that.pictureArr[0]].style.display = "none";
+						that.pictures[that.pictureArr[1]].style.display = "none";
+					}
+					that.hits=1; 
+					that.pictureArr = new Array(); 
+				}
+				that.pictures[this.idx].style.display = "block"; 
+				that.pictureArr[that.hits-1] = this.idx; 
+				if (that.hits == 2&&that.pictureArr[0]==that.pictureArr[1]) {
+					that.hits = 1;
+				}
+				if(that.hits == 2&&that.pictureArr[0]!=that.pictureArr[1]){
+					if(that.pictures[that.pictureArr[0]].className == that.pictures[that.pictureArr[1]].className){
+						setTimeout(function(){ 
+							that.ps[that.pictureArr[0]].style.display = "none";
+							that.ps[that.pictureArr[1]].style.display = "none";
+							that.score += step;
+							that.scoreBox.innerHTML=that.score.length>2?that.score:"0"+that.score;
+							for (var k = 1; k <= th; k++) {
+								if (that.score == k*spacing){
+									for (var i =0; i<that.ps.length; i++) {
+										that.ps[i].style.background = "url(img/"+bg+"/"+bg+"b"+(k+1)+".jpg)";
+										that.ps[i].style.backgroundSize = "100% 100%";
+									}
+								}
+							}
+							if (that.score == totalPoints) {
+								max = that.score+that.countdown;
+								that.scoreBox.innerHTML = that.score+"+"+that.countdown+"="+max;
+								that.timeBox.innerHTML="恭喜通关";
+								clearInterval(window.timer);
+								that.divsDisplay("none");
+								if(localStorage.getItem("最高分"+bg)){
+									mm = localStorage.getItem("最高分"+bg);
+								}else{
+									localStorage.setItem("最高分"+bg,max);
+								}
+								if (max>mm&&mm) {
+									localStorage.setItem("最高分"+bg,max);
+								}
+								that.gameOver(false);
+							}
+						},200);					
+					}
+				}
+			}
+		}
+	},
+	disOrder:function(w,h,bg){
+		this.gameover.style.display = 'none';
+		for (var i = 0; i < this.ps.length; i++) {
+			this.ps[i].style.display = "block";
+			this.ps[i].style.background = "url(img/"+bg+"/"+bg+"b1.jpg)";
+			this.ps[i].style.backgroundSize = "100% 100%";
+			this.pictures[i].style.display = "none";
+			var a = Math.floor(Math.random()*w);
+			var b = Math.floor(Math.random()*w);
+			var c = Math.floor(Math.random()*h);
+			var d = Math.floor(Math.random()*h);
+			this.divs[b].appendChild(this.divs[a].children[c]);
+			this.divs[a].appendChild(this.divs[b].children[d]);
+		}
+		this.divsDisplay("block");
+	},
+	background:function(bg,bs){
+		this.article.style.background="url(img/"+bg+"/"+bg+"xx1.jpg)";
+		this.article.style.backgroundSize= bs;	
+	},
+	PCbtn:function(){
+		var that = this;
+		this.suspend.onclick = function(){
+			that.pause = true;
+			that.divsDisplay("none");
+		}
+		this.proceed.onclick = function(){
+			that.pause = false;
+			if (that.countdown>0) {
+				that.divsDisplay("block");
+			}		
+		}
+	},
+	countDown:function(count){
+		clearInterval(window.timer);
+		this.countdown = count;
+		this.score = 0;
+		this.scoreBox.innerHTML =this.score.length>2?this.score:"0"+this.score;
+		this.timeBox.innerHTML = this.countdown;
+		var that = this;
+		window.timer=setInterval(function(){
+			if(that.pause ==false){
+				that.countdown--;
+			}else{
+				return false;
+			}
+			that.timeBox.innerHTML = String(that.countdown).length>2?that.countdown:"0"+that.countdown;
+			if (that.countdown<=0) {
+				that.timeBox.innerHTML = "Game over";
+				clearInterval(window.timer);
+				that.divsDisplay("none");
+				that.gameOver(true);
+			}
+		},1000)
+	},
+	divsDisplay:function(value){
+		for (var i = 0; i < this.divs.length; i++) {
+			this.divs[i].style.display = value;
+		}
+	},
+	gameOver:function(flag){
+		this.gameover.style.display = 'block';
+		if (flag == true) {
+			this.gameover.children[2].innerHTML = (this.score.length>2?this.score:"0"+this.score)+"分";
+		}else{
+			this.gameover.children[0].innerHTML = "恭喜您通关了";
+			this.gameover.children[2].innerHTML = max+"分";
+			this.gameover.children[4].innerHTML = "再接再厉，再创佳绩";
+		}
+		this.gameover.children[3].onclick = function(){
+			location.reload();
+		}
+	}
+}			
+start.onclick = function(){
+	var xxPlays = new XxPlay(scoreBox,timeBox,bigScore,article,divs,ps,pictures,suspend,proceed,gameover);
+}
+</script>
